@@ -1,6 +1,6 @@
 .container{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .card-box{
     position: relative;
@@ -54,7 +54,7 @@
     position: absolute;
     right: 24px;
     top: 24px;
-    background: #004fff url(../img/play-icon.png)
+    background: #000000 url("/asset/html/index/button")
     no-repeat center;
     background-size: 24px;
     border-radius: 50%;
