@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial0scale=1.0">
         <title>로제타 스톤</title>
-        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
         <style>
             model-viewer{
                 width: 100%;
@@ -120,16 +120,17 @@
         <model-viewer camera-controls touch-action="pan-y" disable-pan skybox-img="/img/image.png"
         camera-orbit="90deg 90deg"
         src="/asset/models/rosetta" 
-        ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="/asset/poster/rosetta" shadow-intensity="1">
-            <div class="progress-bar hide" slot="progress-bar">
+        ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="/asset/poster/rosetta" shadow-intensity="1"
+        ios-src="/asset/models/rosetta_ios">
+        <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
-            </div>
+        </div>
             <button slot="ar-button" id="ar-button">
                 View in your space
             </button>
-            <a href="/">
-                <div class="block"></div>
-                </a>
+            <a href="/3D_Models/index">
+            <div class="block"></div>
+            </a>
     </model-viewer>
     <script>
         // Handles loading the events for <model-viewer>'s slotted progress bar

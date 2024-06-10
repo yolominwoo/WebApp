@@ -7,8 +7,15 @@ app.get('/', (req, res) => {
   res.sendfile("html/index.html")
 })
 
+app.get('/3D_Models/index', (req, res) => {
+  res.sendfile("html/3d_Model.html")
+})
+
 app.get('/asset/html/index/css', (req, res) => {
   res.sendfile("css/style.css")
+})
+app.get('/asset/html/2d/css', (req, res) => {
+  res.sendfile("css/style2.css")
 })
 
 app.get('/asset/html/index/button', (req, res) => {
@@ -120,6 +127,9 @@ app.get('/asset/img/rosetta', (req, res) => {
 app.get('/asset/poster/rosetta', (req, res) => {
   res.sendfile("poster/rosetta.webp")
 })
+app.get('/asset/models/rosetta_ios', (req, res) => {
+  res.sendfile("data/the_rosetta_stone.usdz")
+})
 
 
 
@@ -136,6 +146,9 @@ app.get('/asset/img/boat', (req, res) => {
 app.get('/asset/poster/boat', (req, res) => {
   res.sendfile("poster/boat.webp")
 })
+app.get('/asset/models/boat_ios', (req, res) => {
+  res.sendfile("data/Egyptian_Boat_from_Ancient_Lives.usdz")
+})
 
 
 //9
@@ -150,6 +163,9 @@ app.get('/asset/img/tutankhamun', (req, res) => {
 })
 app.get('/asset/poster/tutankhamun', (req, res) => {
   res.sendfile("poster/tutankhamun.webp")
+})
+app.get('/asset/models/tutankhamun_ios', (req, res) => {
+  res.sendfile("data/Tutankhamun_Gold_Mask.usdz")
 })
 
 //10
@@ -173,8 +189,35 @@ app.get('/asset/img/x2', (req, res) => {
   res.sendfile("img/x2.png")
 })
 
+//2D_View
+app.get('/asset/html/2d_index', (req, res) => {
+  res.sendfile("html/2d_View.html")
+})
+app.get('/asset/script/2d_index', (req, res) => {
+  res.sendfile("html/script.js")
+})
+app.get('/asset/img/2d/1', (req, res) => {
+  res.sendfile("img/img-1.jpg")
+})
+app.get('/asset/img/2d/2', (req, res) => {
+  res.sendfile("img/img-2.jpg")
+})
+app.get('/asset/img/2d/3', (req, res) => {
+  res.sendfile("img/img-3.jpg")
+})
+app.get('/asset/img/2d/4', (req, res) => {
+  res.sendfile("img/img-4.jpg")
+})
+app.get('/asset/img/2d/5', (req, res) => {
+  res.sendfile("img/img-5.jpg")
+})
+app.get('/asset/img/2d/6', (req, res) => {
+  res.sendfile("img/img-6.jpg")
+})
 
-
+app.get('/html/calendar', (req, res) => {
+  res.sendfile("html/cal.html")
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

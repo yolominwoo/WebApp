@@ -1,3 +1,12 @@
+body {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #ffbd23, #f4ff56);
+}
+
 .container{
     text-align: center;
     margin-top: 100px;
